@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "dd9fea78-fc46-4790-8d6a-eb9fa3317e1f",
+		"name": "AccountManagerAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CLIENTS",
+			"item": [
+				{
+					"name": "Create Client [ADMIN]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NjMwMDQsImlhdCI6MTY2Mjg2MjcwNH0.EK6HgZa1Bt0v0EK1eQvewLCvZjnHBGrXFTsnv2Vi0wY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"address\": \"Amazonas y NNUU\",\r\n  \"identification\": \"1704145463\",\r\n  \"names\": \"Marianela Montalvo\",\r\n  \"password\": \"5678\",\r\n  \"phone\": \"097548965\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Client [ADMIN]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDk3MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NjMxMDIsImlhdCI6MTY2Mjg2MjgwMn0.cl6mvuDXBnd8vsq01te72HoK-TX07N-ntncudctxjxY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/admin/client/1704145463",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"client",
+								"1704145463"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Client [USER]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDE0MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4Mzc1ODAsImlhdCI6MTY2MjgzNzQwMH0.ve58___1dYM2hIosoTJkAIeXo1oe9vNIUSzHWiQ-eWY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/user/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Client [USER]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDE0MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4Mzc1ODAsImlhdCI6MTY2MjgzNzQwMH0.ve58___1dYM2hIosoTJkAIeXo1oe9vNIUSzHWiQ-eWY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"address\": \"Otavalo sn y principal\",\r\n  \"age\": 55,\r\n  \"email\": \"jlema@hotmail.com\",\r\n  \"identification\": \"1700086430\",\r\n  \"names\": \"Jose Lema\",\r\n  \"password\": \"1234\",\r\n  \"phone\": \"0992686594\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/user/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"client"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ACCOUNTS",
+			"item": [
+				{
+					"name": "Create Account [ADMIN]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDk3MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NTYyNjUsImlhdCI6MTY2Mjg1NTk2NX0.PWEPYEg5YMaAmI8phuKV84ofwJ3SUgyggFMF8AjkLto",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountNumber\": \"225487\",\r\n  \"accountType\": \"Current\",\r\n  \"identification\": \"1704145463\",\r\n  \"openingBalance\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Account [ADMIN]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDk3MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NTEzNjcsImlhdCI6MTY2Mjg1MTE4N30.nVZMlfF2cbQlg9GpcTe-STKQY8R5z5cnMAajQhOKAdw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountType\": \"current\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/account/478759",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"account",
+								"478759"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account [ADMIN]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDAwODY0MzAiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NjQzNjAsImlhdCI6MTY2Mjg2NDA2MH0.BBBxQePfHbot90nO1CXf0wqWBL5KmyyEtAu8Ivxzzd4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/admin/account/585545",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"account",
+								"585545"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MOVEMENTS",
+			"item": [
+				{
+					"name": "Create Movement [USER]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NTY0OTEsImlhdCI6MTY2Mjg1NjE5MX0.cQZ3CV9a6USmaGzmB3aqxuOE6DJ30Z5xhB46GQHXWXE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountNumber\": \"225487\",\r\n  \"amount\": -1.99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/user/movement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"movement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Movements [USER]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NTY0OTEsImlhdCI6MTY2Mjg1NjE5MX0.cQZ3CV9a6USmaGzmB3aqxuOE6DJ30Z5xhB46GQHXWXE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/user/movement/report?beforeDate=2022-09-12&afterDate=2022-09-15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"movement",
+								"report"
+							],
+							"query": [
+								{
+									"key": "beforeDate",
+									"value": "2022-09-12"
+								},
+								{
+									"key": "afterDate",
+									"value": "2022-09-15"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identification\": \"1700086430\",\r\n  \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identification\": \"1700086430\",\r\n  \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 11 Sep 2022 02:41:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDAwODY0MzAiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NjQzNjAsImlhdCI6MTY2Mjg2NDA2MH0.BBBxQePfHbot90nO1CXf0wqWBL5KmyyEtAu8Ivxzzd4\"\n}"
+				}
+			]
+		}
+	]
+}

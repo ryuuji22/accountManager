@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: krugertest
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/kruger
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+JWT:
+  Secret: "x2952h6KuVfcEv6OPlwixsoBJoSa6YkO$"
+server:
+  port: 8001

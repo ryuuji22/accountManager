@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: accountManager
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driverClassName: org.postgresql.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher 
+JWT:
+  secret: "x2952h6KuVfcEv6OPlwixsoBJoSa6YkO$"
+  expirationMinutes: 5
+server:
+  port: 8001
