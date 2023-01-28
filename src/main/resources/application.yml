@@ -8,7 +8,7 @@ spring:
       ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
   sql:
     init:
-      mode: always
+      mode: ALWAYS
       continue-on-error: true
   datasource:
     url: ${SPRING_DATASOURCE_URL}

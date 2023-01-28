@@ -16,7 +16,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NjMwMDQsImlhdCI6MTY2Mjg2MjcwNH0.EK6HgZa1Bt0v0EK1eQvewLCvZjnHBGrXFTsnv2Vi0wY",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDk3MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NzQ4NDQyNzYsImlhdCI6MTY3NDg0Mzk3Nn0.za8gfEIK5kV8nZAPeVmr0xsO66CkVghZAxnPTcbm8KY",
 									"type": "string"
 								}
 							]
@@ -88,7 +88,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDE0MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4Mzc1ODAsImlhdCI6MTY2MjgzNzQwMH0.ve58___1dYM2hIosoTJkAIeXo1oe9vNIUSzHWiQ-eWY",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NzQ4NDczOTMsImlhdCI6MTY3NDg0NzA5M30.OeF18p9kJhllYJ4IwQQ31hEUsglISWlOpT2N4Cas_P8",
 									"type": "string"
 								}
 							]
@@ -109,7 +109,91 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Read Client [USER]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/api/user/client",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"user",
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Jan 2023 19:18:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"c79910d6-f5ae-444b-9d66-1523c2a3c89b\",\n    \"identification\": \"1704145463\",\n    \"names\": \"Marianela Montalvo\",\n    \"email\": null,\n    \"address\": \"Amazonas y NNUU\",\n    \"phone\": \"097548965\",\n    \"age\": null\n}"
+						}
+					]
 				},
 				{
 					"name": "Edit Client [USER]",
@@ -164,7 +248,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDk3MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NTYyNjUsImlhdCI6MTY2Mjg1NTk2NX0.PWEPYEg5YMaAmI8phuKV84ofwJ3SUgyggFMF8AjkLto",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MTU4NDk3MzEiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NzQ4NDY4OTAsImlhdCI6MTY3NDg0NjU5MH0.BtGhwD5UQ7Cd6RzXZ9GYSLPKW70-AG3jsdb4-LSKFVs",
 									"type": "string"
 								}
 							]
@@ -173,7 +257,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"accountNumber\": \"225487\",\r\n  \"accountType\": \"Current\",\r\n  \"identification\": \"1704145463\",\r\n  \"openingBalance\": 100\r\n}",
+							"raw": "{\r\n  \"accountNumber\": \"478758\",\r\n  \"accountType\": \"Savings\",\r\n  \"identification\": \"1704145463\",\r\n  \"openingBalance\": 200\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -282,7 +366,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NTY0OTEsImlhdCI6MTY2Mjg1NjE5MX0.cQZ3CV9a6USmaGzmB3aqxuOE6DJ30Z5xhB46GQHXWXE",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NzQ4NDczOTMsImlhdCI6MTY3NDg0NzA5M30.OeF18p9kJhllYJ4IwQQ31hEUsglISWlOpT2N4Cas_P8",
 									"type": "string"
 								}
 							]
@@ -291,7 +375,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"accountNumber\": \"225487\",\r\n  \"amount\": -1.99\r\n}",
+							"raw": "{\r\n  \"accountNumber\": \"478758\",\r\n  \"amount\": -20\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -312,7 +396,100 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Create Movement [USER]",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"accountNumber\": \"478758\",\r\n  \"amount\": -20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/user/movement",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"user",
+										"movement"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Jan 2023 19:19:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"99962ea4-87b2-49b4-b809-3312c99af501\",\n    \"accountNumber\": \"478758\",\n    \"type\": \"SAVINGS\",\n    \"actualBalance\": 980\n}"
+						}
+					]
 				},
 				{
 					"name": "Read Movements [USER]",
@@ -322,7 +499,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NjI4NTY0OTEsImlhdCI6MTY2Mjg1NjE5MX0.cQZ3CV9a6USmaGzmB3aqxuOE6DJ30Z5xhB46GQHXWXE",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpZGVudGlmaWNhdGlvbiI6IjE3MDQxNDU0NjMiLCJpc3MiOiJ2YWNjaW5lYXBwL2tydWdlci9rcnVnZXIiLCJleHAiOjE2NzQ4NDcwMTMsImlhdCI6MTY3NDg0NjcxM30.UdJ76TXWFuvj3mjQcszypdK2ZN0HeYaqG2PpDv2SZZA",
 									"type": "string"
 								}
 							]
@@ -330,7 +507,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8001/api/user/movement/report?beforeDate=2022-09-12&afterDate=2022-09-15",
+							"raw": "http://localhost:8001/api/user/movement/report?beforeDate=2023-01-27&afterDate=2023-01-28",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -345,16 +522,111 @@
 							"query": [
 								{
 									"key": "beforeDate",
-									"value": "2022-09-12"
+									"value": "2023-01-27"
 								},
 								{
 									"key": "afterDate",
-									"value": "2022-09-15"
+									"value": "2023-01-28"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Read Movements [USER]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/api/user/movement/report?beforeDate=2023-01-27&afterDate=2023-01-28",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"user",
+										"movement",
+										"report"
+									],
+									"query": [
+										{
+											"key": "beforeDate",
+											"value": "2023-01-27"
+										},
+										{
+											"key": "afterDate",
+											"value": "2023-01-28"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Jan 2023 19:12:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"movementDate\": \"2023-01-27\",\n        \"clientName\": \"Marianela Montalvo\",\n        \"accountNumber\": \"225487\",\n        \"accountType\": \"CURRENT\",\n        \"openingBalance\": 1500,\n        \"movementValue\": -1000,\n        \"balance\": 500\n    },\n    {\n        \"movementDate\": \"2023-01-27\",\n        \"clientName\": \"Marianela Montalvo\",\n        \"accountNumber\": \"225487\",\n        \"accountType\": \"CURRENT\",\n        \"openingBalance\": 1500,\n        \"movementValue\": 800,\n        \"balance\": 1300\n    },\n    {\n        \"movementDate\": \"2023-01-27\",\n        \"clientName\": \"Marianela Montalvo\",\n        \"accountNumber\": \"478758\",\n        \"accountType\": \"SAVINGS\",\n        \"openingBalance\": 200,\n        \"movementValue\": 850,\n        \"balance\": 1050\n    },\n    {\n        \"movementDate\": \"2023-01-27\",\n        \"clientName\": \"Marianela Montalvo\",\n        \"accountNumber\": \"478758\",\n        \"accountType\": \"SAVINGS\",\n        \"openingBalance\": 200,\n        \"movementValue\": -200,\n        \"balance\": 850\n    },\n    {\n        \"movementDate\": \"2023-01-27\",\n        \"clientName\": \"Marianela Montalvo\",\n        \"accountNumber\": \"478758\",\n        \"accountType\": \"SAVINGS\",\n        \"openingBalance\": 200,\n        \"movementValue\": -500,\n        \"balance\": 350\n    },\n    {\n        \"movementDate\": \"2023-01-27\",\n        \"clientName\": \"Marianela Montalvo\",\n        \"accountNumber\": \"478758\",\n        \"accountType\": \"SAVINGS\",\n        \"openingBalance\": 200,\n        \"movementValue\": -300,\n        \"balance\": 50\n    }\n]"
+						}
+					]
 				}
 			]
 		},
@@ -365,7 +637,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"identification\": \"1700086430\",\r\n  \"password\": \"1234\"\r\n}",
+					"raw": "{\r\n  \"identification\": \"1715849731\",\r\n  \"password\": \"1715849731\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

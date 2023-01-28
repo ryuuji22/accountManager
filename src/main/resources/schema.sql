@@ -97,6 +97,7 @@ CREATE TABLE IF NOT EXISTS public.accounts
     account_number character varying(255) COLLATE pg_catalog."default" NOT NULL,
     actual_balance numeric(19,2) NOT NULL,
     opening_balance numeric(19,2) NOT NULL,
+    daily_withdrawal_limit numeric(19,2) NOT NULL DEFAULT 1000,
     type character varying(255) COLLATE pg_catalog."default" NOT NULL,
     client_id character varying(255) COLLATE pg_catalog."default",
     CONSTRAINT accounts_pkey PRIMARY KEY (id),
